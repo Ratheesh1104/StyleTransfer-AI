@@ -127,7 +127,7 @@ if content_image and style_image:
 
             return loss
 
-        epochs = 1000
+        epochs = 20000
         for epoch in range(epochs):
             loss = train_step(init_image, model, gram_style_features, content_features, optimizer)
             if epoch % 100 == 0:
