@@ -78,7 +78,7 @@ def compute_loss(model, init_image, gram_style_features, content_features, style
     return total_loss
 
 # Streamlit UI
-st.title("Neural Style Transfer")
+st.title("Style Transfer")
 
 content_image = st.file_uploader("Upload Content Image", type=["jpg", "jpeg", "png"])
 style_image = st.file_uploader("Upload Style Image", type=["jpg", "jpeg", "png"])
